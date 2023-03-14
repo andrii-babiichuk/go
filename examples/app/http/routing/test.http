@@ -1,0 +1,11 @@
+### статичний статус
+GET http://localhost:8080/status/
+
+### статус по ІД
+GET http://localhost:8080/status/0
+
+### Не коректний метод
+PUT http://localhost:8080/status/1
+
+### Не істуючий шлях
+GET http://localhost:8080/status/s/s/ss/

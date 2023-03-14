@@ -1,0 +1,53 @@
+### valid example
+POST http://localhost:8080/json
+Content-Type: application/json
+
+{
+	"bool": true,
+	"int": 2,
+	"string": "s",
+	"slice": [12],
+	"map":  {
+      "3": "1"
+    },
+    "hidden": "true"
+}
+
+### omitempty examle
+POST http://localhost:8080/json
+Content-Type: application/json
+
+{
+  "int": 0,
+  "string": ""
+}
+
+### invalid type examle
+POST http://localhost:8080/json
+Content-Type: application/json
+
+{
+  "bool": "true",
+  "int": "2",
+  "string": "s",
+  "slice": ["12"],
+  "map":  {
+    "3": "1"
+  },
+  "hidden": true
+}
+
+
+### custom marshling
+POST http://localhost:8080/json
+Content-Type: application/json
+
+{
+  "bool": true,
+  "int": "2",
+  "string": "s",
+  "slice": [12],
+  "map":  {
+    "3": "1"
+  }
+}
