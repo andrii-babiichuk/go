@@ -4,7 +4,7 @@
 
 #### [1.1. Простий HTTP сервер.](./http/hello/hello.go)
 
-#### [1.2. POST запит vs Покажчик.](./http/post/post.go)
+#### [1.2. POST запит.](./http/post/post.go)
 
 #### [1.3. JSON.](./http/json/json.go)
 
